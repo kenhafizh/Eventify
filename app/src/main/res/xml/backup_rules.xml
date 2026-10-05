@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Backup rules: keep the local Room database and secure auth preferences out of
+   cloud/device backups so credentials and user data never leave the device.
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <exclude domain="database" path="eventify.db" />
+    <exclude domain="sharedpref" path="secure_auth_prefs.xml" />
+</full-backup-content>
